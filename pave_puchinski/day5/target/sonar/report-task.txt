@@ -1,0 +1,7 @@
+organization=paul-wallstone
+projectKey=Paul-Wallstone_MyRPA
+serverUrl=https://sonarcloud.io
+serverVersion=8.5.0.37579
+dashboardUrl=https://sonarcloud.io/dashboard?id=Paul-Wallstone_MyRPA
+ceTaskId=AXZJfQMftqHDgsGj69tV
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXZJfQMftqHDgsGj69tV
