@@ -1,0 +1,7 @@
+
+Y
+java:S1128"7Remove this unused import 'java.security.SecureRandom'.(›ιθ™ϊÿÿÿÿ8–Ζ™νδ.
+@
+java:S2119"Save and re-use this "Random".(«νψÿÿÿÿ8°™νδ.
+Z	java:S106&"9Replace this use of System.out or System.err by a logger.(”Ύ½ψÿÿÿÿ8ΔΆ‰νδ.
+>	java:S131""Add a default case to this switch.(ϋΞ8ΔΆ‰νδ.
