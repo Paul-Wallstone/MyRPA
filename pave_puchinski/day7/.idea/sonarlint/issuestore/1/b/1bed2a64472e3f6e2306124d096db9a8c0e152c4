@@ -1,0 +1,10 @@
+
+b
+java:S3973"GUse indentation to denote the code conditionally executed by this "if".(ü¢”ëüÿÿÿÿ
+¢
+java:S2681"†This line will not be executed conditionally; only the first line of this 2-line block will be. The rest will execute unconditionally.(ó¯™¼úÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ÿ÷“À
+L
+java:S2696"6Make the enclosing method "static" or remove this set.(ÛÈß
+S	java:S106""9Replace this use of System.out or System.err by a logger.(©ûˆ©øÿÿÿÿ
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(Ş–ıÄüÿÿÿÿ

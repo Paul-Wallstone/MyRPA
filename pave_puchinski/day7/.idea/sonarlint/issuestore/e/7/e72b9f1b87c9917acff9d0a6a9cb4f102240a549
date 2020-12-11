@@ -1,0 +1,25 @@
+
+Q
+java:S1854";Remove this useless assignment to local variable "player7".(Îö“›
+V
+java:S1854";Remove this useless assignment to local variable "player6".(×êöÆùÿÿÿÿ
+V
+java:S1854";Remove this useless assignment to local variable "player5".(ü‡¥—ýÿÿÿÿ
+V
+java:S1854";Remove this useless assignment to local variable "player4".(ºù¸­øÿÿÿÿ
+Q
+java:S1854";Remove this useless assignment to local variable "player3".(Ï­µà
+V
+java:S1854";Remove this useless assignment to local variable "player8".(í™ ªüÿÿÿÿ
+B
+java:S1481",Remove this unused "player3" local variable.(Ï­µà
+G
+java:S1481",Remove this unused "player4" local variable.(ºù¸­øÿÿÿÿ
+G
+java:S1481",Remove this unused "player5" local variable.(ü‡¥—ýÿÿÿÿ
+G
+java:S1481",Remove this unused "player6" local variable.(×êöÆùÿÿÿÿ
+B
+java:S1481",Remove this unused "player7" local variable.(Îö“›
+G
+java:S1481",Remove this unused "player8" local variable.(í™ ªüÿÿÿÿ
