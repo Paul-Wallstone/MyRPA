@@ -1,0 +1,27 @@
+
+[	java:S106©"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ8«Å—Ñè.
+u
+java:S3776¹"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(Í†…üùÿÿÿÿ8«Å—Ñè.
+[
+java:S4973<"9Use the "equals" method if value comparison was intended.(Óá°ˆøÿÿÿÿ8«Å—Ñè.
+[
+java:S4973="9Use the "equals" method if value comparison was intended.(üÝ¥ûüÿÿÿÿ8Ä‚Ûè.
+V	java:S106š"9Replace this use of System.out or System.err by a logger.(ÒáÙ8«Å—Ñè.
+h
+java:S3776;"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(ÀµÃÆ
+[	java:S106•"9Replace this use of System.out or System.err by a logger.(„£õòùÿÿÿÿ8«Å—Ñè.
+T	java:S106ˆ"9Replace this use of System.out or System.err by a logger.(„£õòùÿÿÿÿ
+[	java:S106œ"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ8«Å—Ñè.
+[
+java:S4973="9Use the "equals" method if value comparison was intended.(üÝ¥ûüÿÿÿÿ8Ä‚Ûè.
+S	java:S1064"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ
+[
+java:S4973<"9Use the "equals" method if value comparison was intended.(Óá°ˆøÿÿÿÿ8«Å—Ñè.
+O	java:S106"9Replace this use of System.out or System.err by a logger.(íÙÐ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ
+[	java:S106¢"9Replace this use of System.out or System.err by a logger.(„£õòùÿÿÿÿ8«Å—Ñè.
+V	java:S106§"9Replace this use of System.out or System.err by a logger.(–Ëàì8«Å—Ñè.
+\
+java:S4973Ò"9Use the "equals" method if value comparison was intended.(íýÒÀþÿÿÿÿ8«Å—Ñè.
+\
+java:S4973Ò"9Use the "equals" method if value comparison was intended.(íýÒÀþÿÿÿÿ8«Å—Ñè.

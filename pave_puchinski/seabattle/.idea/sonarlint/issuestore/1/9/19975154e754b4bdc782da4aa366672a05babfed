@@ -1,0 +1,33 @@
+
+[	java:S106È"9Replace this use of System.out or System.err by a logger.(»¿‡Ñıÿÿÿÿ8­¸ƒİè.
+V	java:S106«"9Replace this use of System.out or System.err by a logger.(ñ¼¿”8­¸ƒİè.
+U	java:S106-"9Replace this use of System.out or System.err by a logger.(›¹ÏÉ8ÈòŒÕè.
+[	java:S106‰"9Replace this use of System.out or System.err by a logger.(ù‹ÊÊıÿÿÿÿ8­¸ƒİè.
+U	java:S106&"9Replace this use of System.out or System.err by a logger.(›¹ÏÉ8ÅŞÕè.
+Z	java:S106P"9Replace this use of System.out or System.err by a logger.(–›Ö¬üÿÿÿÿ8œİ†Õè.
+[	java:S106ˆ"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8³¿àÔè.
+U	java:S106Œ"9Replace this use of System.out or System.err by a logger.(Ê‚08­¸ƒİè.
+[	java:S106ã"9Replace this use of System.out or System.err by a logger.(£¦°öøÿÿÿÿ8­¸ƒİè.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Èï™¬ùÿÿÿÿ8œİ†Õè.
+[	java:S106Î"9Replace this use of System.out or System.err by a logger.(¶€÷Ğüÿÿÿÿ8­¸ƒİè.
+Z	java:S106<"9Replace this use of System.out or System.err by a logger.(ëÃšÆıÿÿÿÿ8œİ†Õè.
+Z	java:S106>"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8œİ†Õè.
+[	java:S106"9Replace this use of System.out or System.err by a logger.(ô¥±üÿÿÿÿ8œİ†Õè.
+P
+java:S1199Æ"-Extract this nested code block into a method.(ê×Êüÿÿÿÿ8­¸ƒİè.
+V	java:S106ô"9Replace this use of System.out or System.err by a logger.(¥Û¬«8­¸ƒİè.
+V	java:S106Ô"9Replace this use of System.out or System.err by a logger.(ÿş’Á8­¸ƒİè.
+V	java:S106Ù"9Replace this use of System.out or System.err by a logger.(¼Ê’¾8­¸ƒİè.
+U	java:S106`"9Replace this use of System.out or System.err by a logger.(°‰Ô¿8œİ†Õè.
+U	java:S1068"9Replace this use of System.out or System.err by a logger.(Äë€õ8œİ†Õè.
+[	java:S106ì"9Replace this use of System.out or System.err by a logger.(á º­ÿÿÿÿÿ8­¸ƒİè.
+[	java:S106"9Replace this use of System.out or System.err by a logger.(«èÕŠøÿÿÿÿ8œİ†Õè.
+p
+java:S3776”"RRefactor this method to reduce its Cognitive Complexity from 35 to the 15 allowed.(ÎÉë8œİ†Õè.
+o
+java:S3776
+"RRefactor this method to reduce its Cognitive Complexity from 35 to the 15 allowed.(Çµí‘8ƒ€“Ôè.
+U	java:S106i"9Replace this use of System.out or System.err by a logger.(êŠ¹ö8œİ†Õè.
+p
+java:S3776ƒ"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(‡õ×ˆ8­¸ƒİè.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(áÜ‘ô8¸…­Ôè.
