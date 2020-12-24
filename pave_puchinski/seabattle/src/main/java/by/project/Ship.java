@@ -1,4 +1,4 @@
-package by.Project;
+package by.project;
 
 public enum Ship {
     TORPEDO_BOATS("торпедный катер", 1, true, "🛥️", "🔥", 2),
@@ -8,24 +8,24 @@ public enum Ship {
     EMPTY_SPACE("пустая клетка", 1, true, "🌊", "🚬", 0),
     FULL_SPACE (" непустая клетка",1,true,"🌊","🚬",1);
 
-    private String RusTitle;
+    private String rusTitle;
     private int lengthShip;
     private boolean alive;
-    private String ship;
+    private String boats;
     private String fired;
     private int spaceStus;
 
     Ship(String rusTitle, int lengthShip, boolean alive, String ship, String fired, int spaceStatus) {
-        RusTitle = rusTitle;
+        this.rusTitle = rusTitle;
         this.lengthShip = lengthShip;
         this.alive = alive;
-        this.ship = ship;
+        this.boats = ship;
         this.fired = fired;
         this.spaceStus = spaceStatus;
     }
 
     public String getRusTitle() {
-        return RusTitle;
+        return rusTitle;
     }
 
     public int getLengthShip() {
@@ -36,8 +36,8 @@ public enum Ship {
         return alive;
     }
 
-    public String getShip() {
-        return ship;
+    public String getBoats() {
+        return boats;
     }
 
     public String getFired() {
@@ -48,7 +48,5 @@ public enum Ship {
         return spaceStus;
     }
 
-    public void setSpaceStatus(int space) {
-        this.spaceStus = space;
-    }
+
 }

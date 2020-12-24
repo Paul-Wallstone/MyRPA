@@ -1,4 +1,4 @@
-package by.Project;
+package by.project;
 
 
 import java.util.Scanner;
@@ -12,10 +12,10 @@ public class Game {
         boolean next = true;
         Scanner sc = new Scanner(System.in);
         Command command = null;
-        String userfield1[][] = new String[11][11];
-        String userfield2[][] = new String[11][11];
-        String userfield1B[][] = new String[11][11];
-        String userfield2B[][] = new String[11][11];
+        String[][] userfield1 = new String[11][11];
+        String[][] userfield2 = new String[11][11];
+        String[][] userfield1B = new String[11][11];
+        String[][] userfield2B = new String[11][11];
         SeaField seaField = null;
         SeaField seaField2 = null;
         User user1 = null;
@@ -105,7 +105,6 @@ public class Game {
                                 System.out.println("Игрок: " + user2.getName() + " победил!");
                                 sc.nextLine();
                                 exit = false;
-                                continue;
                             }
                         }
                     }
@@ -123,11 +122,12 @@ public class Game {
     //проверка вводимых символов
     public static String check(String h) {
         boolean checkLetter = false;
-        if (Character.isDigit(h.charAt(0)))
-            if (Integer.parseInt(h) > 10 || Integer.parseInt(h) <= 0) {
+
+            if ((Integer.parseInt(h) > 10 || Integer.parseInt(h) <= 0)&&Character.isDigit(h.charAt(0))) {
                 System.out.println("НЕВЕРНО ВВЕДЕНЫ КООРДИНАТЫ ПО ГОРИЗОНТАЛИ");
                 return "error";
-            }
+
+        }
         if (!Character.isDigit(h.charAt(0))) {
             String[] lineABC = {" ", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J"};
 
@@ -190,7 +190,7 @@ public class Game {
                 pos2 = Character.toString(coordinates.charAt(2));
                 pos3 = Character.toString(coordinates.charAt(3));
             }
-            if (pos0 != pos1 && pos2 != pos3 && !Character.isDigit(pos0.charAt(0)) && !Character.isDigit(pos2.charAt(0)) &&
+            if (!pos0.equals(pos1) && !pos2.equals(pos3) && !Character.isDigit(pos0.charAt(0)) && !Character.isDigit(pos2.charAt(0)) &&
                     Character.isDigit(pos1.charAt(0)) && Character.isDigit(pos3.charAt(0))) {
                 switch (seaField.addUserShip(check(pos0),
                         check(pos1), check(pos2), check(pos3))) {
@@ -291,7 +291,7 @@ public class Game {
 
                 if (tern == 0) {
                     ex = 1;
-                    continue;
+
                 } else if (tern == 2) {
                     countsForWin++;
 

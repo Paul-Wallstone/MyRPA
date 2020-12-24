@@ -1,4 +1,4 @@
-package by.Project;
+package by.project;
 
 public class User {
 

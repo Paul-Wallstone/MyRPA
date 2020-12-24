@@ -1,17 +1,13 @@
-package by.Project;
+package by.project;
 
 public class SeaField {
     String[][] board;
     User user;
     int countShips;
-
+    private static final String ERROR = "error";
     Ship[][] board1 = new Ship[10][10];
 
-    public SeaField(String[][] board) {
-        this.board = board;
-    }
-
-    public SeaField(String[][] board, User user) {
+     public SeaField(String[][] board, User user) {
         this.board = board;
         this.user = user;
 
@@ -51,7 +47,7 @@ public class SeaField {
             for (int j = 1; j < 11; j++) {
 
                 board1[i - 1][j - 1] = Ship.EMPTY_SPACE;
-                board[i][j] = Ship.EMPTY_SPACE.getShip();
+                board[i][j] = Ship.EMPTY_SPACE.getBoats();
             }
             System.out.println();
         }
@@ -61,9 +57,10 @@ public class SeaField {
 
     // Добовляет корабль игрока
     public int addUserShip(String verticalBegin, String horizontalBegin, String verticalEnd, String horizontalEnd) {
-        if (verticalBegin == "error" || horizontalBegin == "error" ||
-                verticalEnd == "error" || horizontalEnd == "error" || !(verticalEnd.hashCode() == verticalBegin.hashCode() ||
-                horizontalBegin.hashCode() == horizontalEnd.hashCode())) {
+        if (verticalBegin == ERROR || horizontalBegin == ERROR ||
+                verticalEnd == ERROR || horizontalEnd == ERROR ||
+                !(verticalEnd.hashCode() == verticalBegin.hashCode() ||
+                        horizontalBegin.hashCode() == horizontalEnd.hashCode())) {
             return 0;
 
         }
@@ -85,44 +82,44 @@ public class SeaField {
             return 0;
 
         if (verBgn == verEnd && horBgn == horEnd) {//однопалубные
-            board[verBgn][horBgn] = Ship.TORPEDO_BOATS.getShip();
+            board[verBgn][horBgn] = Ship.TORPEDO_BOATS.getBoats();
             board1[verBgn - 1][horBgn - 1] = Ship.TORPEDO_BOATS;
             changeStatusOfFields();
             return 1;
         } else if ((verEnd - verBgn) == 1 || (horEnd - horBgn) == 1) {//двухпалубные
-            board[verBgn][horBgn] = Ship.DESTROYERS.getShip();
-            board[verEnd][horEnd] = Ship.DESTROYERS.getShip();
+            board[verBgn][horBgn] = Ship.DESTROYERS.getBoats();
+            board[verEnd][horEnd] = Ship.DESTROYERS.getBoats();
             board1[verBgn - 1][horBgn - 1] = Ship.DESTROYERS;
             board1[verEnd - 1][horEnd - 1] = Ship.DESTROYERS;
             changeStatusOfFields();
             return 2;
         } else if ((verEnd - verBgn) == 2 || (horEnd - horBgn) == 2) {//трехпалубные
-            board[verBgn][horBgn] = Ship.CRUISERS.getShip();
-            board[verEnd][horEnd] = Ship.CRUISERS.getShip();
+            board[verBgn][horBgn] = Ship.CRUISERS.getBoats();
+            board[verEnd][horEnd] = Ship.CRUISERS.getBoats();
             board1[verBgn - 1][horBgn - 1] = Ship.CRUISERS;
             board1[verEnd - 1][horEnd - 1] = Ship.CRUISERS;
             if (verBgn == verEnd) {
-                board[verBgn][horBgn + 1] = Ship.CRUISERS.getShip();
+                board[verBgn][horBgn + 1] = Ship.CRUISERS.getBoats();
                 board1[verBgn - 1][horBgn] = Ship.CRUISERS;
             } else {
-                board[verBgn + 1][horBgn] = Ship.CRUISERS.getShip();
+                board[verBgn + 1][horBgn] = Ship.CRUISERS.getBoats();
                 board1[verBgn][horBgn - 1] = Ship.CRUISERS;
                 changeStatusOfFields();
                 return 3;
             }
         } else if ((verEnd - verBgn) == 3 || (horEnd - horBgn) == 3) {//четырехпалубный
-            board[verBgn][horBgn] = Ship.BATTLESHIP.getShip();
-            board[verEnd][horEnd] = Ship.BATTLESHIP.getShip();
+            board[verBgn][horBgn] = Ship.BATTLESHIP.getBoats();
+            board[verEnd][horEnd] = Ship.BATTLESHIP.getBoats();
             board1[verBgn - 1][horBgn - 1] = Ship.BATTLESHIP;
             board1[verEnd - 1][horEnd - 1] = Ship.BATTLESHIP;
             if (verBgn == verEnd) {
-                board[verBgn][horBgn + 1] = Ship.BATTLESHIP.getShip();
-                board[verBgn][horBgn + 2] = Ship.BATTLESHIP.getShip();
+                board[verBgn][horBgn + 1] = Ship.BATTLESHIP.getBoats();
+                board[verBgn][horBgn + 2] = Ship.BATTLESHIP.getBoats();
                 board1[verBgn - 1][horBgn] = Ship.BATTLESHIP;
                 board1[verBgn - 1][horBgn + 1] = Ship.BATTLESHIP;
             } else {
-                board[verBgn + 1][horBgn] = Ship.CRUISERS.getShip();
-                board[verBgn + 2][horBgn] = Ship.CRUISERS.getShip();
+                board[verBgn + 1][horBgn] = Ship.CRUISERS.getBoats();
+                board[verBgn + 2][horBgn] = Ship.CRUISERS.getBoats();
                 board1[verBgn][horBgn - 1] = Ship.CRUISERS;
                 board1[verBgn + 1][horBgn - 1] = Ship.CRUISERS;
 
@@ -154,7 +151,7 @@ public class SeaField {
             for (int j = 0; j < 10; j++) {
 
 
-                System.out.print(board1[i][j].getShip());
+                System.out.print(board1[i][j].getBoats());
             }
             System.out.println();
         }
@@ -210,7 +207,7 @@ public class SeaField {
     }
 
     public static int fire(SeaField seaField, String verticalBegin, String horizontalBegin, SeaField seaFieldBack) {
-        if (verticalBegin == "error" || horizontalBegin == "error") {
+        if (verticalBegin == ERROR || horizontalBegin == ERROR) {
             return 1;
 
         }
@@ -230,8 +227,8 @@ public class SeaField {
             return 1;
 
         }
-        if (seaField.board1[verBgn - 1][horBgn - 1].getShip() != Ship.EMPTY_SPACE.getShip() ||
-                seaField.board1[verBgn - 1][horBgn - 1].getShip() != Ship.FULL_SPACE.getShip()) {
+        if (seaField.board1[verBgn - 1][horBgn - 1].getBoats() != Ship.EMPTY_SPACE.getBoats() ||
+                seaField.board1[verBgn - 1][horBgn - 1].getBoats() != Ship.FULL_SPACE.getBoats()) {
 
             seaField.board[verBgn][horBgn] = Ship.CRUISERS.getFired();
             seaFieldBack.board[verBgn][horBgn] = Ship.CRUISERS.getFired();
