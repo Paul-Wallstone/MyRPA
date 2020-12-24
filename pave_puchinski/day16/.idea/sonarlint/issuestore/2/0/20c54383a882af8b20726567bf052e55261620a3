@@ -1,0 +1,28 @@
+
+J
+java:S1481"(Remove this unused "pw2" local variable.(Œ¤»¯şÿÿÿÿ8×œ‹ç.
+Y
+java:S1854"7Remove this useless assignment to local variable "pw2".(Œ¤»¯şÿÿÿÿ8İ€›‹ç.
+S
+java:S1854"6Remove this useless assignment to local variable "pw".(«áÜ 8Î”‘‹ç.
+f
+java:S2095"IUse try-with-resources or close this "PrintWriter" in a "finally" clause.(«áÜ 8Î”‘‹ç.
+D
+java:S1481"'Remove this unused "pw" local variable.(«áÜ 8Î”‘‹ç.
+8
+java:S1643-"Use a StringBuilder instead.(×ÔäU8ßğ‹ç.
+l
+java:S1192"JDefine a constant instead of duplicating this literal "file2.txt" 3 times.(Œ¤»¯şÿÿÿÿ8¡Ë‰Œç.
+g
+java:S2095;"EUse try-with-resources or close this "Scanner" in a "finally" clause.(Èñ¾„ıÿÿÿÿ8ó¡û‹ç.
+k
+java:S2095"IUse try-with-resources or close this "PrintWriter" in a "finally" clause.(Œ¤»¯şÿÿÿÿ8İ€›‹ç.
+g
+java:S1192"JDefine a constant instead of duplicating this literal "file1.txt" 3 times.(«áÜ 8ò¸Ù‹ç.
+>
+java:S1643"Use a StringBuilder instead.(‹¿•àøÿÿÿÿ8Äë‹ç.
+=
+java:S2129" Remove this "String" constructor(´²Ôø8Äë‹ç.
+U	java:S106C"9Replace this use of System.out or System.err by a logger.(Šì¶²8‘¹„Œç.
+g
+java:S2095!"EUse try-with-resources or close this "Scanner" in a "finally" clause.(Èñ¾„ıÿÿÿÿ8¶Ñ¢‹ç.
